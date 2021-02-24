@@ -18,5 +18,26 @@
                 <ListBox Name="lbxCustimersEX1" Grid.Row="1" Grid.Column="0"/>
             </Grid>
         </TabItem>
+        <TabItem Name="EX2" Header="EX2" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnQueryEX2" Content="Query" Height="25" Width="75" Click="btnQueryEx2_Click"/>
+                <DataGrid Name="dgCustomersEX2" Grid.Row="1" Grid.Column="0"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="EX3" Header="EX3" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnQueryEX3" Content="Query" Height="25" Width="75" Click="btnQueryEx3_Click"/>
+                <DataGrid Name="dgCustomersEX3" Grid.Row="1" Grid.Column="0"/>
+            </Grid>
+        </TabItem>
     </TabControl>
+    
 </Window>
