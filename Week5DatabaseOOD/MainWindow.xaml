@@ -38,6 +38,26 @@
                 <DataGrid Name="dgCustomersEX3" Grid.Row="1" Grid.Column="0"/>
             </Grid>
         </TabItem>
+        <TabItem Name="EX4" Header="EX4" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnQueryEX4" Content="Query" Height="25" Width="75" Click="btnQueryEx4_Click"/>
+                <DataGrid Name="dgCustomersEX4" Grid.Row="1" Grid.Column="0"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="EX5" Header="EX5" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnQueryEX5" Content="Query" Height="25" Width="75" Click="btnQueryEx5_Click"/>
+                <DataGrid Name="dgCustomersEX5" Grid.Row="1" Grid.Column="0"/>
+            </Grid>
+        </TabItem>
     </TabControl>
     
 </Window>
