@@ -20,9 +20,16 @@ namespace Week5DatabaseOOD
     /// </summary>
     public partial class MainWindow : Window
     {
+        NORTHWNDEntities db = new NORTHWNDEntities();
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void btnQuery_Click(object sender,RoutedEventArgs e)
+        {
+            var query = from c in db.Customers
+                        select c.CompanyName;
+            lbxCustimersEX1.ItemsSource = query.ToList();
         }
     }
 }
