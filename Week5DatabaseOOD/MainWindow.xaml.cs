@@ -92,5 +92,37 @@ namespace Week5DatabaseOOD
                         };
             currentGrid.ItemsSource = query.ToList();
         }
+        private void btnQueryEx6_Click(object sender,RoutedEventArgs e)
+        {
+            Product p1 = (db.Products
+                .Where(p => p.ProductName.StartsWith("kick"))
+                .Select(p => p)).First();
+            
+            p1.UnitPrice = 100m;
+            
+            db.SaveChanges();
+            ShowProducts(dgCustomersEX6);
+        }
+        private void btnQueryEx7_Click(object sender, RoutedEventArgs e)
+        {
+            var products = from p in db.Products
+                           where p.ProductName.StartsWith("kick")
+                           select p;
+            foreach (var item in products)
+            {
+                item.UnitPrice = 100m;
+            }
+            db.SaveChanges();
+            ShowProducts(dgCustomersEX7);
+        }
+        private void btnQueryEx8_Click(object sender, RoutedEventArgs e)
+        {
+            var products = from p in db.Products
+                           where p.ProductName.StartsWith("kick")
+                           select p;
+            db.Products.RemoveRange(products);
+            db.SaveChanges();
+            ShowProducts(dgCustomersEX8);
+        }
     }
 }

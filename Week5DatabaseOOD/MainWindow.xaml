@@ -58,6 +58,36 @@
                 <DataGrid Name="dgCustomersEX5" Grid.Row="1" Grid.Column="0"/>
             </Grid>
         </TabItem>
+        <TabItem Name="EX6" Header="EX6" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnQueryEX6" Content="Query" Height="25" Width="75" Click="btnQueryEx6_Click"/>
+                <DataGrid Name="dgCustomersEX6" Grid.Row="1" Grid.Column="0"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="EX7" Header="EX7" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnQueryEX7" Content="Query" Height="25" Width="75" Click="btnQueryEx7_Click"/>
+                <DataGrid Name="dgCustomersEX7" Grid.Row="1" Grid.Column="0"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="EX8" Header="EX8" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnQueryEX8" Content="Query" Height="25" Width="75" Click="btnQueryEx8_Click"/>
+                <DataGrid Name="dgCustomersEX8" Grid.Row="1" Grid.Column="0"/>
+            </Grid>
+        </TabItem>
     </TabControl>
     
 </Window>
