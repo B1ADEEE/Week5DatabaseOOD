@@ -124,5 +124,10 @@ namespace Week5DatabaseOOD
             db.SaveChanges();
             ShowProducts(dgCustomersEX8);
         }
+        private void btnQueryEx9_Click(object sender,RoutedEventArgs e)
+        {
+            var query = db.Customers_By_City("London");
+            dgCustomersEX9.ItemsSource = query.ToList();
+        }
     }
 }
